@@ -62,7 +62,6 @@ class ChangeTextTest {
         val result = device.findObject(By.res(packageName, "textToBeChanged")).text
         assertEquals(result, textToSet)
     }
-
     @Test
     fun testChangeText1() {
         val packageName = MODEL_PACKAGE
@@ -88,28 +87,6 @@ class ChangeTextTest {
     }
 
 
-
-
-//    @Test
-//    fun testInternetSettings1() {
-//        // Press home
-//        device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
-//        device.pressHome()
-//
-//        // Wait for launcher
-//        val launcherPackage = device.launcherPackageName
-//        device.wait(Until.hasObject(By.pkg(launcherPackage)), TIMEOUT)
-//        waitForPackage(SETTINGS_PACKAGE)
-//
-//        val context = ApplicationProvider.getApplicationContext<Context>()
-//        val intent = context.packageManager.getLaunchIntentForPackage(SETTINGS_PACKAGE)
-//        context.startActivity(intent)
-//        device.wait(Until.hasObject(By.pkg(SETTINGS_PACKAGE)), TIMEOUT)
-//
-//        device.findObject(
-//            UiSelector().resourceId("android:id/title").instance(0)
-//        ).click()
-//    }
 }
 
 
